@@ -171,9 +171,9 @@ A 4-panel publication-grade image summarizing:
 ### Launch the Interactive Graphical Window (Streamlit GUI)
 ```bash
 ./run_gui.sh
-# or
+
 streamlit run app.py
-# or
+
 python main.py --gui
 ```
 
@@ -184,26 +184,7 @@ python main.py
 ./run_simulation.sh
 ```
 
----
-
-## 6. Git Version History (October 2026 Commit Milestones)
-
-The repository includes a Git commit history reflecting architectural development across October 2026:
-
-* `2026-10-08`: `feat(core): initial repository layout, domain models, and architecture design draft`
-* `2026-10-14`: `feat(mediator): implement central event mediator with barrier state machine`
-* `2026-10-19`: `feat(processors): add payment, kitchen, courier, and notification event processors`
-* `2026-10-23`: `feat(sim): discrete-event simulation engine with Poisson arrival and surge generator`
-* `2026-10-27`: `feat(ui): terminal console dashboard and visual telemetry generation`
-* `2026-10-29`: `fix(perf): instrument mediator thread exhaustion and queue backlog metrics (reproduce bottleneck)`
-* `2026-10-31 15:10:00`: `docs(arch): finalize IEEE-standard SRS and ADR-001 (Mediator topology trade-offs & fitness functions)`
-* `2026-10-31 22:30:00`: `feat(ux): interactive terminal UI control center, live dynamic mediator topology diagram, and real-time gauges`
-* `2026-10-31 23:45:00`: `feat(gui): interactive control center window with dynamic parameter sliders, live courier transit animations, and city dispatch map`
-
-
----
-
-## 7. Real-Time Incremental Simulation Engine & True Courier State Tracking
+## 6. Real-Time Incremental Simulation Engine & True Courier State Tracking
 
 The v6 engine completely replaces static batch simulations () with an **incremental event generator**:
 * ****: Increments virtual time by 0.5s ticks, yielding to the Streamlit UI loop so that intermediate states render smoothly.
